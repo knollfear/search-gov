@@ -32,7 +32,7 @@ module ES
     private
 
     def self.client_config(mode)
-      Rails.application.secrets['analytics']['elasticsearch'][mode]
+      Rails.application.secrets.analytics['elasticsearch'][mode]
     end
   end
 
@@ -41,7 +41,7 @@ module ES
     private
 
     def self.client_config(mode)
-      Rails.application.secrets['custom_indices']['elasticsearch'][mode]
+      Rails.application.secrets.custom_indices['elasticsearch'][mode]
     end
   end
 end
